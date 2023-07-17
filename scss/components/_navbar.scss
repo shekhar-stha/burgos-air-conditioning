@@ -1,0 +1,16 @@
+nav{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .navbar-brand{
+      img{
+        width: 13rem;
+        object-fit: contain;
+      }
+    }
+
+    .nav-link{
+      color: $dark;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin: 0 1.5rem;
+    }
+}
