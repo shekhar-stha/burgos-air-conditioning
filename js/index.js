@@ -596,34 +596,34 @@
 AOS.init();
 
 
-$('.services-row').slick({
-  dots: true,
-  infinite: true,
-  loop: true,
-  speed: 300,
-  slidesToShow: 2,
-  slidesToScroll: 1,
-  prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
-  nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
-  responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }
-  ]
-});
+// $('.services-row').slick({
+//   dots: true,
+//   infinite: true,
+//   loop: true,
+//   speed: 300,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   prevArrow: '<i class="fa-solid fa-chevron-left left-arrow"></i>',
+//   nextArrow: '<i class="fa-solid fa-chevron-right right-arrow"></i>',
+//   responsive: [
+//     {
+//       breakpoint: 1200,
+//       settings: {
+//         slidesToShow: 2,
+//         slidesToScroll: 1,
+//         infinite: true,
+//         dots: true
+//       }
+//     },
+//     {
+//       breakpoint: 768,
+//       settings: {
+//         slidesToShow: 1,
+//         slidesToScroll: 1
+//       }
+//     }
+//   ]
+// });
 
 $(".client-slider").slick({
   arrows: false,
@@ -635,53 +635,3 @@ $(".client-slider").slick({
   slidesToShow: 1,
   slidesToScroll: 1,
 });
-
-
-$(".testimonial-carousel").slick({
-  infinite: true,
-  slidesToShow: 2,
-  arrows: false,
-  autoplay: false,
-  speed: 300,
-  loop: true,
-  dots: true,
-  responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 2,
-      },
-    },
-    {
-      breakpoint: 850,
-      settings: {
-        slidesToShow: 1,
-      },
-    },
-  ],
-});
-
-
-// const programInfo = document.querySelectorAll('.program-info');
-// const programImg = document.querySelectorAll('.program-img-div');
-// const setEqualHeight = () => {
-//   let maxHeight = 0;
-
-
-//   programInfo.forEach(card => {
-//     card.style.height = '';
-//     const cardHeight = card.offsetHeight;
-//     if (cardHeight > maxHeight) {
-//       maxHeight = cardHeight;
-//     }
-//   });
-
-
-//   programImg.forEach(card => {
-//     card.style.height = maxHeight + 'px';
-//   });
-// };
-
-// setEqualHeight();
-
-// window.addEventListener('resize', setEqualHeight);

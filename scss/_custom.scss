@@ -9,7 +9,7 @@ $success: #2299d4;
 $danger: #ff4d00;
 $black: #302c2c;
 $white: #fcfef7;
-$creamWhite: #ffffff;
+$creamWhite: #f7f2ed;
 $info: #808080;
 
 $container-max-widths: (
@@ -212,36 +212,34 @@ body {
 
 section {
     overflow: hidden;
-    margin-bottom: 3.5rem;
+    margin-bottom: 4.5rem;
 }
 
 .header {
-    font-size: 36px;
+    font-size: 33px;
     font-weight: 600;
     position: relative;
-    text-align: center;
     text-transform: capitalize;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .sub-header {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    text-align: center;
-    color: $primary;
+    padding-left: 7rem;
+    color: $secondary;
     position: relative;
     margin-bottom: 0.5rem;
-
-    // &::after {
-    //     position: absolute;
-    //     content: "";
-    //     width: 4rem;
-    //     height: 5px;
-    //     left: 50%;
-    //     transform: translateX(-50%);
-    //     bottom: -7px;
-    //     background-color: $danger;
-    // }
+    text-transform: uppercase;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 6rem;
+        height: 2px;
+        left: 0%;
+        bottom: 50%;
+        background-color: $secondary;
+    }
 }
 
 .sub-header-start {
@@ -256,8 +254,4 @@ section {
     //     bottom: -7px;
     //     background-color: $danger;
     // }
-}
-
-section {
-    margin-bottom: 3rem;
 }
