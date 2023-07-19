@@ -12366,6 +12366,7 @@ nav .nav-link {
 .about-us .img-side {
   width: 100%;
   position: relative;
+  max-height: 35rem;
 }
 .about-us .img-side img {
   padding-left: 3rem;

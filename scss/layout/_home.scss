@@ -170,7 +170,7 @@
     .img-side {
         width: 100%;
         position: relative;
-
+        max-height: 35rem;
         img {
             padding-left: 3rem;
             padding-right: 3rem;
@@ -201,6 +201,7 @@
 
             p {
                 text-align: center;
+
                 span {
                     font-size: 32px;
                     color: $secondary;
@@ -229,6 +230,7 @@
 
             p {
                 text-align: center;
+
                 span {
                     font-size: 32px;
                     color: $secondary;
@@ -357,13 +359,14 @@
             border-radius: 8px;
             transition: all 0.5s;
             cursor: pointer;
-            &:hover{
+
+            &:hover {
                 background-color: $primary;
 
                 h4 {
                     color: $white;
                 }
-    
+
                 p {
                     color: $white;
                 }
