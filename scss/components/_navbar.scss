@@ -12,5 +12,9 @@ nav{
       font-size: 1.2rem;
       font-weight: 500;
       margin: 0 1.5rem;
+
+      @media (max-width: 992px) {
+        text-align: center;
+      }
     }
 }

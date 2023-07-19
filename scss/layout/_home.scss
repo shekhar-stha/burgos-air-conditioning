@@ -3,7 +3,7 @@
         padding: 8rem 0 10rem;
 
         @media (max-width: 1200px) {
-            padding: 1rem 0 6rem;
+            padding: 4rem 0 6rem;
         }
 
         h1 {
@@ -24,7 +24,7 @@
         p {
             font-size: 19px;
             color: $white;
-            width: 60%;
+            width: 70%;
             text-shadow: black 0.1em 0.1em 0.2em;
 
             @media (max-width: 768px) {
@@ -44,6 +44,37 @@
             z-index: -1;
             object-fit: cover;
             z-index: -2;
+            filter: blur(7px);
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $primary;
+            opacity: 0.8;
+            z-index: -1;
+        }
+
+        .ac {
+            position: absolute;
+            bottom: 0;
+            width: 10rem;
+            z-index: -1;
+            object-fit: contain;
+            z-index: 1;
+            filter: brightness(70%);
+        }
+
+        .ac-left {
+            left: 2%;
+        }
+
+        .ac-right {
+            right: 2%;
         }
     }
 
@@ -68,11 +99,11 @@
         width: 95%;
     }
 
-    @media (max-width: 840px) {
+    @media (max-width: 992px) {
         flex-direction: column;
 
         .feature {
-            width: 100%;
+            width: 100% !important;
         }
     }
 
@@ -86,6 +117,7 @@
         width: 33.33%;
         height: 150px;
         padding-left: 2rem;
+        padding-right: 1rem;
 
         &:nth-of-type(1) {
             background-color: #f7f2ed;
@@ -107,7 +139,7 @@
             }
         }
 
-        @media (max-width: 840px) {
+        @media (max-width: 992px) {
             width: 100%;
             justify-content: center;
             margin: 0.8rem auto;
@@ -144,6 +176,17 @@
             padding-right: 3rem;
             width: 100%;
             height: 100%;
+            object-fit: cover;
+
+            @media (max-width: 1200px) {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
+
+            @media (max-width: 576px) {
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+            }
         }
 
         .data-top {
@@ -156,9 +199,20 @@
             color: $white;
             font-weight: 500;
 
-            span {
-                font-size: 35px;
-                color: $secondary;
+            p {
+                text-align: center;
+                span {
+                    font-size: 32px;
+                    color: $secondary;
+                }
+            }
+
+            @media (max-width: 576px) {
+                padding: 0.6rem 1.6rem;
+
+                span {
+                    font-size: 30px;
+                }
             }
         }
 
@@ -173,9 +227,12 @@
             font-weight: 500;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-            span {
-                font-size: 35px;
-                color: $secondary;
+            p {
+                text-align: center;
+                span {
+                    font-size: 32px;
+                    color: $secondary;
+                }
             }
         }
     }
@@ -219,21 +276,38 @@
     .img-div {
         width: 23%;
 
+        @media (max-width:992px) {
+            display: none;
+        }
+
         img {
             width: 100%;
-            height: 100%;
-            filter: brightness(80%);
+            max-height: 20rem;
+            filter: brightness(70%);
             z-index: 2;
+            object-fit: contain;
         }
     }
 
     .info-div {
         padding-left: 5rem;
 
+        @media (max-width:992px) {
+            padding-left: 0rem;
+        }
+
         h4 {
             font-size: 38px;
             color: $white;
             margin-bottom: 2rem;
+
+            @media (max-width:992px) {
+                text-align: center;
+            }
+
+            @media (max-width:768px) {
+                font-size: 33px;
+            }
         }
     }
 
@@ -263,10 +337,15 @@
 .services {
     background-color: #eeeffa;
     padding: 4rem 0;
+
     .services-row {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+
+        @media (max-width:768px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         .service {
             background-color: #ffffff;
@@ -276,6 +355,19 @@
             align-items: center;
             padding: 1.8rem;
             border-radius: 8px;
+            transition: all 0.5s;
+            cursor: pointer;
+            &:hover{
+                background-color: $primary;
+
+                h4 {
+                    color: $white;
+                }
+    
+                p {
+                    color: $white;
+                }
+            }
 
             .logo-div {
                 background-color: $secondary;
