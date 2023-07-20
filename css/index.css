@@ -12213,44 +12213,114 @@ nav .nav-link {
 }
 
 .nav-hero .hero {
-  padding: 8rem 0 10rem;
+  padding: 4rem 0 3rem;
 }
 @media (max-width: 1200px) {
   .nav-hero .hero {
     padding: 4rem 0 6rem;
   }
 }
-.nav-hero .hero h1, .nav-hero .hero .h1 {
+.nav-hero .hero .info-div {
+  padding: 4rem 0 8rem;
+  width: 60%;
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .info-div {
+    padding: 0rem 0 4rem;
+  }
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .info-div {
+    width: 100%;
+  }
+}
+.nav-hero .hero .info-div h1, .nav-hero .hero .info-div .h1 {
   font-size: 45px;
   margin-bottom: 2.5rem;
   color: #fcfef7;
-  text-shadow: black 0.1em 0.1em 0.2em;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
 }
 @media (max-width: 768px) {
-  .nav-hero .hero h1, .nav-hero .hero .h1 {
+  .nav-hero .hero .info-div h1, .nav-hero .hero .info-div .h1 {
     font-size: 35px;
   }
 }
 @media (max-width: 576px) {
-  .nav-hero .hero h1, .nav-hero .hero .h1 {
+  .nav-hero .hero .info-div h1, .nav-hero .hero .info-div .h1 {
     font-size: 32px;
   }
 }
-.nav-hero .hero p {
+.nav-hero .hero .info-div p {
   font-size: 19px;
   color: #fcfef7;
-  width: 70%;
+  width: 100%;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
 @media (max-width: 768px) {
-  .nav-hero .hero p {
+  .nav-hero .hero .info-div p {
     font-size: 16px;
   }
 }
 @media (max-width: 576px) {
-  .nav-hero .hero p {
+  .nav-hero .hero .info-div p {
     font-size: 15px;
   }
+}
+.nav-hero .hero .img-div {
+  width: 40%;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .img-div {
+    width: 100%;
+  }
+}
+.nav-hero .hero .img-div .ac {
+  width: 90%;
+  max-height: 30rem;
+  z-index: -1;
+  object-fit: contain;
+  z-index: 1;
+  filter: brightness(70%);
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .img-div .ac {
+    max-height: 20rem;
+  }
+}
+.nav-hero .hero .img-div .blob {
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  right: 0;
+  bottom: -2%;
+  z-index: -1;
+}
+@media (max-width: 1200px) {
+  .nav-hero .hero .img-div .blob {
+    width: 120%;
+    right: -10%;
+    height: 80%;
+    bottom: 0%;
+  }
+}
+@media (max-width: 992px) {
+  .nav-hero .hero .img-div .blob {
+    width: 100%;
+    right: 0%;
+    height: 80%;
+    bottom: -10%;
+  }
+}
+.nav-hero .hero .img-div .blob-dotted {
+  position: absolute;
+  width: 96%;
+  height: 84%;
+  right: 2%;
+  bottom: 2%;
+  z-index: -1;
+  opacity: 0.4;
 }
 .nav-hero .hero .hero-img {
   position: absolute;
@@ -12271,22 +12341,7 @@ nav .nav-link {
   height: 100%;
   background-color: #0d4b8b;
   opacity: 0.8;
-  z-index: -1;
-}
-.nav-hero .hero .ac {
-  position: absolute;
-  bottom: 0;
-  width: 10rem;
-  z-index: -1;
-  object-fit: contain;
-  z-index: 1;
-  filter: brightness(70%);
-}
-.nav-hero .hero .ac-left {
-  left: 2%;
-}
-.nav-hero .hero .ac-right {
-  right: 2%;
+  z-index: -2;
 }
 
 .features {
