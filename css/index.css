@@ -12059,8 +12059,12 @@ nav {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #02071d;
 }
-nav .navbar-brand img {
+nav .navbar-brand {
+  max-width: calc(100% - 5rem);
   width: 13rem;
+}
+nav .navbar-brand img {
+  width: 100%;
   object-fit: contain;
 }
 nav .nav-link {
