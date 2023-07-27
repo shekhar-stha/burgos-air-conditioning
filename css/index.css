@@ -12732,6 +12732,11 @@ footer .footer-nav span {
   color: #212529;
   font-weight: 600;
 }
+footer .footer-nav a:hover,
+footer .footer-nav p:hover,
+footer .footer-nav span:hover {
+  padding-left: 0.5rem;
+}
 footer .footer-nav a {
   text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
 }
