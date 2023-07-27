@@ -596,7 +596,7 @@
 
 
 footer {
-    background-color: $warning;
+    background-color: $white;
 
     .footer-bg {
         position: absolute;
@@ -613,11 +613,12 @@ footer {
         a,
         p,
         span {
-            color: $white;
+            color: $dark;
+            font-weight: 600;
         }
 
         a {
-            text-shadow: black 0.1em 0.1em 0.2em;
+            text-shadow: rgb(255, 255, 255) 0.1em 0.1em 0.2em;
         }
 
         p {
